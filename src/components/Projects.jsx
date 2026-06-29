@@ -10,6 +10,10 @@ const projects = [
     tech: ['React', 'TypeScript', 'PHP Laravel', 'MySQL', 'Material UI', 'Docker'],
     color: '#D4A017',
     featured: true,
+
+    live: ' https://market99.com/',
+
+
   },
   {
     title: 'Creative Automation Dashboard',
