@@ -8,7 +8,7 @@ const projects = [
     company: 'Market99',
     description: 'End-to-end development of a scalable ERP dashboard handling reporting, inventory, and operations management for 500+ internal users. Achieved 40% faster report generation and 40% better table rendering via SQL optimization and React lazy loading.',
     tech: ['React', 'TypeScript', 'PHP Laravel', 'MySQL', 'Material UI'],
-    color: '#4e61f1',
+    color: '#4ef1d0',
     featured: true,
     live: 'https://masterms.in/',
   },
