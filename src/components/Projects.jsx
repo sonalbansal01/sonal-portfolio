@@ -10,44 +10,44 @@ const projects = [
     tech: ['React', 'TypeScript', 'PHP Laravel', 'MySQL', 'Material UI', 'Docker'],
     color: '#D4A017',
     featured: true,
-
-    live: ' https://market99.com/',
-
-
+    live: 'https://masterms.in/',
   },
   {
-    title: 'Creative Automation Dashboard',
-    description: 'Workflow dashboard to manage and automate digital asset processes with reusable React components and optimized rendering — reduced manual task time by ~40%.',
-    tech: ['React', 'Node.js', 'REST APIs', 'Recharts'],
+    title: 'Netcare Consulting Platform',
+    company: 'Netcare Consulting',
+    description: 'Full-stack consulting platform built with React, PHP, and MySQL. Improved backend performance by 30% through code refactoring, implemented dynamic forms and multi-step workflows reducing manual data entry errors by ~25%.',
+    tech: ['React', 'PHP', 'MySQL', 'JavaScript', 'CSS3'],
     color: '#6366f1',
+    live: 'https://netcareconsulting.com/',
   },
   {
     title: 'Visa Application Platform',
-    company: 'Netcare Consulting',        // optional
-    description: 'Apna description yahan likho.',
-    tech: ['PHP', 'MySQL', 'Bootstrap'],
+    company: 'Netcare Consulting',
+    description: 'Full-featured visa application and processing platform with dynamic multi-step forms, secure document uploads, and real-time status tracking. Improved form submission by 35% and mobile usability by 25%.',
+    tech: ['PHP', 'MySQL', 'Bootstrap', 'JavaScript'],
     color: '#22c55e',
-    github: 'https://github.com/sonalbansal01/visa-project',  // tera actual link
-    live: 'https://visawebsite.com',      // live site ka link
+    live: 'https://applycscscardonline.com/',
   },
-
+  {
+    title: 'Triumph777',
+    description: 'High-performance web platform with secure backend validation, optimized page load speed and SEO scores. Enhanced Core Web Vitals by 20% via payload optimization and image compression.',
+    tech: ['PHP', 'MySQL', 'JavaScript', 'Bootstrap'],
+    color: '#ef4444',
+    live: 'https://triumph777.com/',
+  },
+  {
+    title: 'GoTravellerz – UK Travel Portal',
+    description: 'UK-based travel and course portal with responsive UI design, structured backend validation, and SEO-optimized pages. Delivered modular features across multiple Agile sprints.',
+    tech: ['PHP', 'MySQL', 'Bootstrap', 'JavaScript'],
+    color: '#f59e0b',
+    live: 'https://gotravellerz.co.uk/',
+  },
   {
     title: 'MoneyFinserv – Loan Services',
-    description: 'Comprehensive financial services platform for loan management with secure backend validation, dynamic eligibility calculators, and responsive UI redesign. Reduced form errors significantly.',
+    description: 'Comprehensive financial services platform for loan management with secure backend validation, dynamic eligibility calculators, and responsive UI redesign. Reduced form errors significantly and improved mobile usability by 25%.',
     tech: ['PHP', 'MySQL', 'JavaScript', 'Bootstrap'],
-    color: '#f59e0b',
-  },
-  {
-    title: 'Laravel Auction System',
-    description: 'Real-time bidding and auction system with live bid updates, user authentication, role-based access, and payment integration. Built for scalability with event-driven architecture.',
-    tech: ['Laravel', 'PHP', 'MySQL', 'WebSockets', 'Redis'],
-    color: '#ef4444',
-  },
-  {
-    title: 'Data Visualization Dashboard',
-    description: 'Interactive analytics dashboard with dynamic charts, data aggregation, and filterable reports. Features MongoDB aggregation pipelines and optimized API response times for large datasets.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Recharts', 'REST API'],
     color: '#8b5cf6',
+    live: 'https://moneyfinserv.com/web/',
   },
 ]
 
@@ -82,13 +82,8 @@ function ProjectCard({ project, index, inView }) {
           e.currentTarget.style.boxShadow = 'none'
         }}
       >
-        {/* Color header bar */}
-        <div style={{
-          height: 4,
-          background: `linear-gradient(90deg, ${project.color}, ${project.color}80)`,
-        }} />
+        <div style={{ height: 4, background: `linear-gradient(90deg, ${project.color}, ${project.color}80)` }} />
 
-        {/* Card body */}
         <div style={{ padding: '28px', flex: 1, display: 'flex', flexDirection: 'column' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 12 }}>
             <div style={{
@@ -114,7 +109,6 @@ function ProjectCard({ project, index, inView }) {
           )}
           <p style={{ color: '#bdbdbd', fontSize: 13.5, lineHeight: 1.7, flex: 1, marginBottom: 20 }}>{project.description}</p>
 
-          {/* Tech tags */}
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 20 }}>
             {project.tech.map(t => (
               <span key={t} style={{
@@ -125,28 +119,31 @@ function ProjectCard({ project, index, inView }) {
             ))}
           </div>
 
-          {/* Action buttons */}
           <div style={{ display: 'flex', gap: 12 }}>
-            <a href="#" style={{
-              display: 'flex', alignItems: 'center', gap: 6,
-              color: '#bdbdbd', fontSize: 12, fontWeight: 500,
-              textDecoration: 'none', transition: 'color 0.2s',
-            }}
-              onMouseEnter={e => e.currentTarget.style.color = '#fff'}
-              onMouseLeave={e => e.currentTarget.style.color = '#bdbdbd'}
-            >
-              <FiGithub size={14} /> GitHub
-            </a>
-            <a href="#" style={{
-              display: 'flex', alignItems: 'center', gap: 6,
-              color: '#bdbdbd', fontSize: 12, fontWeight: 500,
-              textDecoration: 'none', transition: 'color 0.2s',
-            }}
-              onMouseEnter={e => e.currentTarget.style.color = project.color}
-              onMouseLeave={e => e.currentTarget.style.color = '#bdbdbd'}
-            >
-              <FiExternalLink size={14} /> Live Demo
-            </a>
+            {project.github && (
+              <a href={project.github} target="_blank" rel="noopener noreferrer" style={{
+                display: 'flex', alignItems: 'center', gap: 6,
+                color: '#bdbdbd', fontSize: 12, fontWeight: 500,
+                textDecoration: 'none', transition: 'color 0.2s',
+              }}
+                onMouseEnter={e => e.currentTarget.style.color = '#fff'}
+                onMouseLeave={e => e.currentTarget.style.color = '#bdbdbd'}
+              >
+                <FiGithub size={14} /> GitHub
+              </a>
+            )}
+            {project.live && (
+              <a href={project.live} target="_blank" rel="noopener noreferrer" style={{
+                display: 'flex', alignItems: 'center', gap: 6,
+                color: '#bdbdbd', fontSize: 12, fontWeight: 500,
+                textDecoration: 'none', transition: 'color 0.2s',
+              }}
+                onMouseEnter={e => e.currentTarget.style.color = project.color}
+                onMouseLeave={e => e.currentTarget.style.color = '#bdbdbd'}
+              >
+                <FiExternalLink size={14} /> Live Demo
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -183,4 +180,4 @@ export default function Projects() {
       `}</style>
     </section>
   )
-}
+} s
