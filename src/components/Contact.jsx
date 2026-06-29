@@ -6,13 +6,8 @@ const contactInfo = [
   { icon: FiPhone, label: 'Phone', value: '+91 8700494999', href: 'tel:+918700494999' },
   { icon: FiMail, label: 'Email', value: 'sonalbansal1290@gmail.com', href: 'mailto:sonalbansal1290@gmail.com' },
   { icon: FiMapPin, label: 'Location', value: 'Faridabad, Haryana, India', href: null },
-<<<<<<< HEAD
   { icon: FiGithub, label: 'GitHub', value: 'github.com/sonal', href: 'https://github.com/sonalbansal01' },
   { icon: FiLinkedin, label: 'LinkedIn', value: 'linkedin.com/in/sonal', href: 'https://linkedin.com/in/sonal-bansal-394577230' },
-=======
-  { icon: FiGithub, label: 'GitHub', value: 'github.com/sonal', href: 'https://github.com' },
-  { icon: FiLinkedin, label: 'LinkedIn', value: 'linkedin.com/in/sonal', href: 'https://linkedin.com' },
->>>>>>> 3e34af337986dfc45b0c692cab04b2785b4b49fe
 ]
 
 export default function Contact() {

@@ -19,7 +19,6 @@ const projects = [
   },
   {
     title: 'Visa Application Platform',
-<<<<<<< HEAD
     company: 'Netcare Consulting',        // optional
     description: 'Apna description yahan likho.',
     tech: ['PHP', 'MySQL', 'Bootstrap'],
@@ -28,12 +27,6 @@ const projects = [
     live: 'https://visawebsite.com',      // live site ka link
   },
 
-=======
-    description: 'Full-featured visa application and processing platform with dynamic multi-step forms, secure document uploads, and real-time status tracking. Improved form submission by 35% and mobile usability by 25%.',
-    tech: ['PHP', 'MySQL', 'Bootstrap', 'JavaScript'],
-    color: '#22c55e',
-  },
->>>>>>> 3e34af337986dfc45b0c692cab04b2785b4b49fe
   {
     title: 'MoneyFinserv – Loan Services',
     description: 'Comprehensive financial services platform for loan management with secure backend validation, dynamic eligibility calculators, and responsive UI redesign. Reduced form errors significantly.',

@@ -114,13 +114,8 @@ export default function Hero() {
           style={{ display: 'flex', gap: 16 }}
         >
           {[
-<<<<<<< HEAD
             { icon: FiGithub, href: 'https://github.com/sonalbansal01/', label: 'GitHub' },
             { icon: FiLinkedin, href: 'https://www.linkedin.com/in/sonal-bansal-394577230/', label: 'LinkedIn' },
-=======
-            { icon: FiGithub, href: 'https://github.com/', label: 'GitHub' },
-            { icon: FiLinkedin, href: 'https://linkedin.com/', label: 'LinkedIn' },
->>>>>>> 3e34af337986dfc45b0c692cab04b2785b4b49fe
             { icon: FiMail, href: 'mailto:sonalbansal1290@gmail.com', label: 'Email' },
           ].map(({ icon: Icon, href, label }) => (
             <motion.a
