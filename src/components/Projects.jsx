@@ -10,11 +10,11 @@ const projects = [
     tech: ['React', 'TypeScript', 'PHP Laravel', 'MySQL', 'Material UI'],
     color: '#4ef1d0',
     featured: true,
-    live: 'https://masterms.in/',
+    live: '',
   },
   {
     title: 'MasterMS – Lead Management System',
-    company: 'Market99',
+    company: 'Netcare Consulting',
     description:
       'Developed a comprehensive Lead Management System (MasterMS) for managing sales leads, customer follow-ups, lead assignments, status tracking, and reporting. Built scalable modules using React, TypeScript, Laravel, and MySQL, improving team productivity and streamlining lead management across departments.',
     tech: [
